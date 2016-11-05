@@ -39,12 +39,10 @@ ul {
   list-style: none;
 }
 
-a:hover,
-a:active,
-a:link {
-  text-decoration: none;
-}
-
+a:link {text-decoration: none;}
+a:visited {text-decoration: none; color: #222;}
+a:hover {text-decoration: none; color: red;}
+a:active {text-decoration: none; color: red;}
 
 /*=== Clasess ===*/
 
@@ -88,9 +86,8 @@ nav ul li{
 }
 nav ul li a{
   display: block;
-  font-weight: bold;
+  color: #222;
 }
-nav ul li a:hover{color: #ccc;}
 .nav-icon {
   width: 50px;
   height: 45px;

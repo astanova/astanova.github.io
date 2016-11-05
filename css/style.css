@@ -43,7 +43,6 @@ a:hover,
 a:active,
 a:link {
   text-decoration: none;
-  color: #222;
 }
 
 
@@ -307,6 +306,7 @@ nav ul li a:hover{color: #ccc;}
 .sr-descr{
   display: block;
   font: 30px 'RobotoRegular';
+  color: #c66fc6;
   text-align: center;
   padding-top: 100px;
   margin-bottom: 15px;
@@ -317,63 +317,25 @@ nav ul li a:hover{color: #ccc;}
 .farb {background: url(../img/farb.png)no-repeat center;}
 
 /*=== Portfolio ===*/
-
-.filterbox {padding-top: 40px;text-align: center;}
-.gallery .mix {display: none;}
-.gallery {margin-top: 25px;}
-
-.gallery img{
-  width: 24%;
-  height: 360px;
+.gallery{
+  padding-top: 50px;
+}
+.gall-ftr{
+  padding: 15px;
+}
+.gall-itm img{
+  max-width: 100%;
   display: block;
-  margin: 3px;
+  margin: 10px auto;
 }
-.button-1 {
-  position: relative;
-  display: inline-block;
-  font-weight: bold;
-  background: #c66fc6;
-  border: none;
-  color: #222;
-  padding: 12px;
-  margin-right: 20px;
-  overflow: hidden;
-  -webkit-transition: 09s;
-  -webkit-transition: 0.9s;
-  transition: 0.9s;
+.g-more{
+  font-size: 20px;
+  display: block;
+  width: 126px;
+  padding: 10px;
+  margin: 50px auto;
+  border: 3px dotted #c66fc6;
 }
-
-.button-1:before {
-  content: "";
-  position: absolute;
-  bottom: auto;
-  top: -40px;
-  right: -40px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #222;
-  -webkit-transition: 09s;
-  -webkit-transition: 0.9s;
-  transition: 0.9s;
-}
-
-.button-1:hover:before {
-  width: 270px;
-  height: 270px;
-  color: #fff;
-}
-
-.button-1:hover,
-.button-1:focus {
-  color: #fff;
-}
-
-.button-1 span {
-  position: relative;
-}
-
-
 /*=== Price ===*/
 
 .price-wrapper {
@@ -468,21 +430,13 @@ footer p {
 }
 
 @media only screen and (max-width: 906px) {
-  .gallery img {width: 48%;}
 }
 
 @media only screen and (max-width: 768px) {
-  .gallery img {width: 48%;}
-  .button-1 {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-  }
   .ct-price{text-align: right;}
 }
 
 @media only screen and (max-width: 460px) {
-  .gallery img {width: 100%;}
   .ct-name {width: 100%;}
   .ct-price {width: 100%;text-align: right;}
   nav ul li {

@@ -1,18 +1,16 @@
 $(function(){
   
-  $('.gallery').mixItUp({
-    load:{
-      filter: '.cat-1'
+$('a[href^="#"]').click(function () { 
+    elementClick = $(this).attr("href");
+    destination = $(elementClick).offset().top;
+    if($(elementClick)){
+    $('body').animate( { scrollTop: destination }, 1000 );
+    } else {
+        $('html').animate( { scrollTop: destination }, 1000 );
     }
-  });
-  
-  $("nav ul li").on("click","a", function (event) {
-  event.preventDefault();
-   var id  = $(this).attr('href'),
-   top = $(id).offset().top;         
-  $('body,html').animate({scrollTop: top}, 1000);
-  });
-  
+    return false;
+});
+
   $('.nav-icon').click(function(e){
     e.preventDefault();
     $(this).toggleClass('active');
